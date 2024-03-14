@@ -5,6 +5,11 @@
   color: aliceblue;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 body {
   background: black url(img/fundo.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -15,21 +20,40 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+  min-height: 25vh;
 }
 
 #title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10px;
+
+}
+
+#aba {
+  display: none;
 }
 
 main {
-  min-height: 85vh;
+  min-height: 65vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#tamole {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
 }
 
 li {
@@ -42,14 +66,16 @@ a {
   padding: 5px 10px;
   border-radius: 5px;
 
-  font-size: 1.2em;
-  color: rgba(245, 222, 179, 0.578);
+
+  font-size: 1.1em;
+  color: rgba(240, 248, 255, 0.425);
 }
 
 a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
 #caixa {
   display: flex;
   justify-content: space-between;
@@ -64,9 +90,9 @@ a:hover {
   text-align: center;
 }
 
-#icon {
-  margin-left: 10px;
-  margin-top: 3px;
+#icon, #micro {
+  margin: 3px 3px 0px 7px;
+  color: rgba(255, 255, 255, 0.514);
 }
 
 input {
@@ -75,6 +101,10 @@ input {
   padding: 5px;
   background-color: transparent;
   border: none;
+}
+
+input:focus, select:focus {
+  outline: 0;
 }
 
 
