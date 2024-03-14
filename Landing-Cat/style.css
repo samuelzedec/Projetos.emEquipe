@@ -114,6 +114,9 @@ input::placeholder {
   text-shadow: 0px 0px 10px black, 0px 0px 10px black;
 }
 
-@media screen {
-  
+footer {
+  height: 9vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
