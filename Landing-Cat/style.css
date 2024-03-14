@@ -54,13 +54,33 @@ a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-#ipesquisa {
+#caixa {
+  display: flex;
+  justify-content: space-between;
+
+  overflow: hidden;
   width: 500px;
   height: 30px;
   background-color: rgba(255, 255, 255, 0.404);
   border-radius: 5px;
   border: none;
+
+  text-align: center;
 }
+
+#icon {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+input {
+  width: 450px;
+  height: 30px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+}
+
 
 input::placeholder {
   color: rgb(255, 255, 255);
